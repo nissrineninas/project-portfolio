@@ -1,9 +1,54 @@
-h1{
-    color: red;
-    font-family: 'Glory', sans-serif;
+:root{
+    --primary-font-color:#272142;
+    --primary-background-color: #f9f7fe;
+    --primary-link-color: #6C63FF;
+    --secondary-link-color:#FFFF00;
+    --main-font: 'Azeret Mono', monospace;
+    --secondary-font-color:'Glory', sans-serif;
+}
+
+body{
+    font-family: var(--secondary-font-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--main-font);
+    line-height: 1.5;
+    
 }
 
 p{
     font-family: 'Azeret Mono', monospace;
-        font-size: 22px;
+    font-size: 22px;
+    color: var(--main-font-color)
+}
+
+.hero{
+    background-color: var(--primary-background-color) ;
+    text-align: center;
+    padding: 160px 0px;
+    
+}
+
+.hero p, h3{
+    font-family: var(--secondary-font);
+    font-size: 24px;;
+}
+
+.hero h3{
+    font-size: 22px;
+}
+
+.btn-branding {
+    background: var(--primary-link-color);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 25px;
+    margin: 24px;
+}
+
+.btn-branding:hover{
+    color:var(--secondary-link-color);
 }
