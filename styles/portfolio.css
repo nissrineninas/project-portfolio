@@ -24,10 +24,19 @@ h3 {
   line-height: 1.5;
 }
 
+img {
+  margin-bottom: 20px;
+  max-width: 560px;
+  max-height: 560px;
+}
 p {
   font-family: var(--teritary-font);
   color: var(--primary-dark-color);
   font-size: 16px;
+}
+
+.project-description {
+  padding: 60px 60px;
 }
 
 .hero {
@@ -62,10 +71,18 @@ p {
   line-height: 27px;
   padding: 5px 15px;
   margin: 24px;
+  transition: border-width 0.6s linear;
 }
 
 .btn-branding-outline:hover {
   border: 2px solid var(--secondary-accent-color);
-
   color: var(--primary-accent-color);
+  border-width: 10px;
+}
+
+@media (max-width: 900px) {
+  .project-description {
+    padding: 0;
+    text-align: justify;
+  }
 }
