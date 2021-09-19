@@ -1,25 +1,28 @@
 :root {
   /* --primary-font-color: #272142; */
-  --primary-dark-color: #0d5c63;
-  --primary-light-color: #fffffa;
-  --secondary-dark-color: #a2c11c;
-  --secondary-light-color: #78cdd7;
-  --primary-accent-color: #e8630a;
-  --secondary-accent-color: #c2ff6b;
-  --teritary-accent-color: #f0ff52;
-  --primary-font: "Azeret Mono", monospace;
-  --secondary-font: "Glory", sans-serif;
+  --primary-dark-color: #000000;
+  --primary-light-color: #f9f7fe;
+  /* --secondary-dark-color: #272142;
+  --secondary-light-color: #78cdd7; */
+  --primary-accent-color: #272142;
+  --secondary-accent-color: #6c63ff;
+  --teritary-accent-color: #885df1;
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Poppins", sans-serif;
   --teritary-font: "IBM Plex Sans Devanagari", sans-serif;
+  --font-weight-bold: bold;
+  --font-weight-light: 400;
 }
 
-body {
+body,
+h3 {
   font-family: var(--secondary-font);
   color: var(--primary-dark-color);
 }
 
-h1,
-h3 {
+h1 {
   font-family: var(--primary-font);
+  font-weight: var(--font-weight-bold);
   color: var(--primary-accent-color);
   line-height: 1.5;
 }
@@ -30,9 +33,12 @@ img {
   max-height: 560px;
 }
 p {
-  font-family: var(--teritary-font);
-  color: var(--primary-dark-color);
+  font-family: var(--secondary-font);
+  color: var(--primary-accent-color);
   font-size: 16px;
+  font-weight: var(--font-weight-light);
+  line-height: 30px;
+  opacity: 0.7;
 }
 
 .project-description {
@@ -45,33 +51,37 @@ p {
   padding: 160px 0px;
 }
 
-.hero h3 {
+.hero h4 {
+  color: var(--primary-accent-color);
   font-size: 22px;
 }
 
 .btn-branding {
-  background: var(--secondary-dark-color);
+  background: var(--secondary-accent-color);
   border-radius: 4px;
   color: var(--primary-light-color);
   font-size: 18px;
+  height: 63px;
   line-height: 27px;
-  padding: 15px 25px;
+  padding: 18px 30px;
   margin: 24px;
+  width: 200px;
 }
 
-.btn-branding:hover {
-  color: var(--teritary-accent-color);
-}
+/* .btn-branding:hover {
+  color: var(--secondary-accent-color);
+} */
 
 .btn-branding-outline {
-  border: 2px solid var(--secondary-light-color);
+  border: 2px solid var(--secondary-accent-color);
   border-radius: 4px;
-  color: var(--primary-dark-color);
+  color: var(--teritary-accent-color);
   font-size: 18px;
-  line-height: 27px;
+  font-weight: 500;
+  line-height: 24px;
   padding: 5px 15px;
   margin: 24px;
-  transition: border-width 0.6s linear;
+  width: 150px;
 }
 
 .btn-branding-outline:hover {
