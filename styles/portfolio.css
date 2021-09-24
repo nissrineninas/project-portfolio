@@ -101,9 +101,8 @@ p {
 }
 
 .btn-branding-outline:hover {
-  border: 2px solid var(--secondary-accent-color);
   color: var(--primary-accent-color);
-  border-width: 10px;
+  border-width: 3px;
 }
 
 @media (max-width: 900px) {
