@@ -60,6 +60,7 @@ p {
 .hero h1 {
   font-size: 96px;
 }
+
 .hero h2,
 .hero p {
   color: var(--primary-accent-color);
@@ -84,11 +85,9 @@ p {
   width: 200px;
 }
 
-/* .btn-branding:hover {
-  color: var(--secondary-accent-color);
-} */
-
 .btn-branding-outline {
+  display: flex;
+  align-items: center;
   border: 2px solid var(--secondary-accent-color);
   border-radius: 4px;
   color: var(--teritary-accent-color);
