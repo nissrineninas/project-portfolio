@@ -20,7 +20,12 @@ h3 {
   color: var(--primary-dark-color);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--primary-font);
   font-weight: var(--font-weight-bold);
   color: var(--primary-accent-color);
@@ -47,13 +52,24 @@ p {
 
 .hero {
   background-color: var(--primary-light-color);
+  font-weight: var(--font-weight-bold);
   text-align: center;
   padding: 160px 0px;
 }
 
-.hero h4 {
+.hero h1 {
+  font-size: 96px;
+}
+.hero h2,
+.hero p {
   color: var(--primary-accent-color);
-  font-size: 22px;
+  font-family: var(--secondary-font);
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.hero p {
+  font-weight: bold;
 }
 
 .btn-branding {
