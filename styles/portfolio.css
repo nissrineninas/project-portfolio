@@ -33,6 +33,7 @@ h6 {
 }
 
 img {
+  border-radius: 2px;
   margin-bottom: 20px;
   max-width: 560px;
   max-height: 560px;
@@ -73,6 +74,12 @@ p {
   font-weight: bold;
 }
 
+.about-hero {
+  background-color: var(--primary-light-color);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  padding: 160px 0px;
+}
 .btn-branding {
   background: var(--secondary-accent-color);
   border-radius: 4px;
