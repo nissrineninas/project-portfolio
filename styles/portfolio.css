@@ -14,8 +14,7 @@
   --font-weight-light: 400;
 }
 
-body,
-h3 {
+body {
   font-family: var(--secondary-font);
   color: var(--primary-dark-color);
 }
@@ -33,7 +32,7 @@ h6 {
 }
 
 img {
-  border-radius: 2px;
+  border-radius: 10px;
   margin-bottom: 20px;
   max-width: 560px;
   max-height: 560px;
@@ -51,11 +50,16 @@ p {
   padding: 60px 60px;
 }
 
-.hero {
-  background-color: var(--primary-light-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  padding: 160px 0px;
+.navbar-nav {
+  text-align: right;
+}
+
+.active {
+  color: var(--teritary-accent-color) !important;
+}
+
+.nav-item {
+  padding: 0px 30px;
 }
 
 .hero h1 {
@@ -68,28 +72,21 @@ p {
   font-family: var(--secondary-font);
   font-weight: normal;
   font-size: 36px;
+  text-align: center;
 }
 
 .hero p {
   font-weight: bold;
 }
 
-.about-hero {
+.hero {
   background-color: var(--primary-light-color);
   font-weight: var(--font-weight-bold);
   text-align: center;
   padding: 160px 0px;
 }
-.btn-branding {
-  background: var(--secondary-accent-color);
-  border-radius: 4px;
-  color: var(--primary-light-color);
-  font-size: 18px;
-  height: 63px;
-  line-height: 27px;
-  padding: 18px 30px;
-  margin: 24px;
-  width: 200px;
+.content-container {
+  padding-bottom: 0px;
 }
 
 .btn-branding-outline {
@@ -111,9 +108,54 @@ p {
   border-width: 3px;
 }
 
+.btn-branding {
+  background: var(--secondary-accent-color);
+  border-radius: 4px;
+  color: var(--primary-light-color);
+  font-size: 16px;
+  height: 63px;
+  line-height: 27px;
+  padding: 18px 30px;
+  margin: 24px;
+  width: 200px;
+}
+
+.about-hero h1 {
+  font-family: var(--primary-font);
+  font-size: 64px;
+  line-height: 85.31px;
+  padding-bottom: 29px;
+}
+.about-hero h2,
+p {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+.about-hero img {
+  height: 904px;
+  width: 603px;
+}
+.about-hero {
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  padding: 60px 0px;
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
     text-align: justify;
+  }
+
+  .about-hero h2,
+  h1,
+  p {
+    text-align: center;
+  }
+  .about-hero h1 {
+    font-size: 24px;
   }
 }
