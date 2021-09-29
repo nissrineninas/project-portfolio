@@ -24,6 +24,14 @@ h3 {
   line-height: 1.5;
 }
 
+h2,
+h4
+{
+  font-family: var(--teritary-font);
+  color: var--primary-dark-color);
+  line-height: 1.5;
+}
+
 img {
   margin-bottom: 20px;
   max-width: 560px;
