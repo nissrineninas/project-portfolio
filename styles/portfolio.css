@@ -59,12 +59,17 @@ p {
   line-height: 30px;
   opacity: 0.7;
 }
+
 #work {
   font-family: var(--primary-font);
   font-size: 48px;
   font-weight: 700;
   line-height: 64px;
   text-align: left;
+}
+
+.work-hero {
+  padding: 49px 42px;
 }
 
 .social-links {
@@ -79,16 +84,12 @@ p {
   text-align: right;
 }
 
-.active {
-  color: var(--teritary-accent-color) !important;
-}
-
 .nav-item {
   padding: 0px 30px;
 }
 
-.hero h1 {
-  font-size: 96px;
+.hero p {
+  font-weight: bold;
 }
 
 .hero h2,
@@ -100,8 +101,8 @@ p {
   text-align: center;
 }
 
-.hero p {
-  font-weight: bold;
+.hero h1 {
+  font-size: 96px;
 }
 
 .hero {
@@ -111,9 +112,34 @@ p {
   padding: 160px 0px;
 }
 
-.work-hero {
-  padding: 49px 42px;
+.footer-social-links a {
+  color: var(--teritary-accent-color);
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 0px 20px;
+  padding: 10px 14px;
+  transition: all 150ms ease-in-out;
 }
+
+.footer-social-links a:hover {
+  color: var(--primary-light-color);
+  background-color: var(--teritary-accent-color);
+}
+
+.footer-hero {
+  background-color: var(--primary-light-color);
+  border-radius: 20px;
+  padding: 42px 42px;
+}
+
+.footer,
+.footer div {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
 .content-container,
 .content-container p {
   font-size: 14px;
@@ -123,6 +149,9 @@ p {
   padding-bottom: 0px;
 }
 
+.code-source a {
+  font-size: 10px;
+}
 .btn-branding-outline {
   display: flex;
   align-items: center;
@@ -154,13 +183,10 @@ p {
   width: 200px;
 }
 
-.about-hero h1 {
-  font-family: var(--primary-font);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 85.31px;
-  padding-bottom: 29px;
+.active {
+  color: var(--teritary-accent-color) !important;
 }
+
 .about-hero h2,
 .about-hero p {
   font-family: var(--secondary-font);
@@ -168,6 +194,14 @@ p {
   line-height: 27px;
   text-align: left;
   padding-bottom: 28px;
+}
+
+.about-hero h1 {
+  font-family: var(--primary-font);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 85.31px;
+  padding-bottom: 29px;
 }
 
 .about-hero img {
