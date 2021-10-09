@@ -38,31 +38,40 @@
   </head>
 
   <body>
-    <nav class="custom-logo">
-      <div>
-        <img
-          src="images/logo.png"
-          class="nav-logo"
-          alt="logo image links to homepage"
-        />
-        <ul class="nvaigation-items">
-          <li>
-            <a href="index.html" alt="navigate to home page link">Home</a>
-          </li>
-          <li>
-            <a href="About.html" alt="navigate to about page link">About</a>
-          </li>
-          <li>
-            <a href="Work.html" alt="navigate to work page link">Work</a>
-          </li>
-          <li>
-            <a href="Contact.html" alt="navigate to contact page link"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between customised-navigation">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            class="nav-logo"
+            alt="logo image links to homepage"
+          />
+        </a>
+        <div class="custom-nav-pages">
+          <ul class="custom-nav-pages-ul">
+            <li class="navigation-items">
+              <a href="index.html" alt="navigate to home page link">Home</a>
+            </li>
+            <li class="navigation-items">
+              <a href="About.html" alt="navigate to about page link">About</a>
+            </li>
+            <li class="navigation-items">
+              <a href="Work.html" alt="navigate to work page link">Work</a>
+            </li>
+            <li class="navigation-items">
+              <a
+                class="active"
+                href="Contact.html"
+                tabindex="-1"
+                aria-current="page"
+                alt="navigate to contact page link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="container content-container">
       <div class="inner-content">

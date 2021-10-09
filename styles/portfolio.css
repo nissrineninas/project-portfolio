@@ -21,6 +21,10 @@ a {
   line-height: 36px;
   text-decoration: none;
 }
+a:hover {
+  color: var(--teritary-accent-color);
+  transition: all 100ms ease-in-out;
+}
 body {
   font-family: var(--secondary-font);
   color: var(--primary-dark-color);
@@ -123,7 +127,6 @@ p {
 }
 
 .footer-social-links a:hover {
-  color: var(--primary-light-color);
   background-color: var(--teritary-accent-color);
 }
 
@@ -145,7 +148,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  text-align: center;
+  text-align: right;
   padding-bottom: 0px;
 }
 
@@ -167,7 +170,6 @@ p {
 }
 
 .btn-branding-outline:hover {
-  color: var(--primary-accent-color);
   border-width: 3px;
 }
 
@@ -218,7 +220,31 @@ p {
     padding: 0;
     text-align: justify;
   }
+  .nav-logo {
+    display: none;
+  }
 
+  .custom-nav-pages-ul {
+    align-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 380;
+  }
+
+  .navigation-items,
+  .navigation-items a {
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 14px;
+    display: inline-flex;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: right;
+    line-height: 16px;
+  }
   .about-hero h2,
   h1,
   p {
@@ -234,33 +260,29 @@ p {
 }
 
 /* customised navigation on contact page css */
-nav li {
-  display: inline;
-  left: 165px;
-  list-style: none;
-  margin: 0;
-  position: absolute;
-  top: 36px;
+.custom-nav-pages {
+  justify-content: right;
+  padding-right: 20px;
 }
 
 .nav-logo {
-  position: absolute;
-  width: 150px;
   height: 41.82px;
-  left: 165px;
-  top: 36px;
+  padding-top: 4px;
+  max-width: 150px;
 }
 
 .navigation-items {
-  position: absolute;
-  width: 341px;
-  height: 24px;
-  left: 960px;
-  top: 47px;
-
+  display: inline;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  height: 24px;
+  left: 960px;
+  line-height: 50px;
+  list-style: none;
+  margin-left: 30px;
+  padding: 0px;
+  top: 47px;
+  width: 341px;
 }
