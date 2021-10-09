@@ -232,3 +232,35 @@ p {
     font-size: 36px;
   }
 }
+
+/* customised navigation on contact page css */
+nav li {
+  display: inline;
+  left: 165px;
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 36px;
+}
+
+.nav-logo {
+  position: absolute;
+  width: 150px;
+  height: 41.82px;
+  left: 165px;
+  top: 36px;
+}
+
+.navigation-items {
+  position: absolute;
+  width: 341px;
+  height: 24px;
+  left: 960px;
+  top: 47px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
