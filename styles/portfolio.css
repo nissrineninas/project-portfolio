@@ -158,28 +158,6 @@ p {
   justify-content: space-evenly;
   font-size: 14px;
 }
-
-.btn-branding-outline {
-  align-items: center;
-  border: 2px solid var(--secondary-light-color);
-  border-radius: 4px;
-  color: var(--primary-dark-color);
-  display: flex;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  /* line-height: 27px; */
-  /* padding: 5px 15px; */
-
-  /* margin: 24px; */
-  transition: border-width 0.6s linear;
-}
-
-.btn-branding-outline:hover {
-  border: 2px solid var(--primary-accent-color);
-  color: var(--primary-accent-color);
-  border-width: 5px;
-}
 .btn-branding:hover {
   background-color: var(--secondary-light-color);
   border: 4px solid var(--secondary-light-color);
@@ -187,16 +165,30 @@ p {
   border-width: 5px;
 }
 
-.btn-branding {
-  background: var(--primary-accent-color);
+.btn-branding,
+.btn-branding-outline {
   border-radius: 4px;
-  color: var(--primary-light-color);
   font-size: 16px;
   height: 63px;
-  /* line-height: 27px; */
+  line-height: 27px;
   padding: 18px 30px;
-  /* margin: 24px; */
+  margin: 24px;
   width: 200px;
+}
+
+.btn-branding {
+  background: var(--primary-accent-color);
+  color: var(--primary-light-color);
+}
+.btn-branding-outline {
+  border: 2px solid var(--secondary-light-color);
+  color: var(--primary-dark-color);
+}
+
+.btn-branding-outline:hover {
+  border: 2px solid var(--primary-accent-color);
+  color: var(--primary-accent-color);
+  border-width: 5px;
 }
 
 .btn-branding:hover,
